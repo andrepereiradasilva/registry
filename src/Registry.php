@@ -414,7 +414,7 @@ class Registry implements \JsonSerializable, \ArrayAccess, \IteratorAggregate, \
 		$node = $this->data;
 
 		// Traverse the registry to find the correct node for the result.
-		foreach ($i = 0, $n = count($pathNodes) - 1; $i < $n; $i++)
+		for ($i = 0, $n = count($pathNodes) - 1; $i < $n; $i++)
 		{
 			if (is_object($node))
 			{
